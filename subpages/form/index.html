@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Medica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/4a8e26ddd0.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4a8e26ddd0.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+        <div class="content">
+
+            <div class="grup-form">
+                <div class="grup-formLeft">
+                                <h1 class="logo animate__animated animate__slideInDown">Cita <span>Medica</span></h1>
+                    <h3>Informacion</h3>
+                    <form action="formulario.php" method="post">
+                        <p>
+                            <label for="fullname">Nombre</label>
+                            <input type="text" name="fullname" id="fullname">
+                        </p>
+
+                        <p>
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" name="apellido" id="apellido">
+                        </p>
+
+                        <p>
+                            <label for="ident">Id</label>
+                            <input type="text" name="ident" id="ident">
+                        </p>
+
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </p>
+
+                        
+
+                        <p>
+                            <label for="tel">Telefono</label>
+                            <input type="tel" name="tel" id="tel">
+                        </p>
+
+                        <p class="block">
+                            <label for="observacion">Observaciones</label>
+                            <textarea name="observacion" id="observacion" rows="5"></textarea>
+                        </p>
+                        
+                        
+                    
+                </div>
+                <div class="grup-formRight">
+                    <h4>Disponibilidad</h4>
+                    <p>
+                        <label class="aling">
+                            <input type="checkbox" name="check">
+                            Lunes
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="dias">
+                            <input type="checkbox" name="check">
+                            Martes
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="dias">
+                            <input type="checkbox" name="check">
+                            Miercoles
+                        </label>
+                    </p>
+
+                    <p>  
+                        <label for="dias">
+                            <input type="checkbox" name="check">
+                            Jueves
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="dias">
+                            <input type="checkbox" name="check">
+                            Viernes
+                        </label>
+                    </p>
+
+                    <h4>IPS de atencion</h4>
+
+                    <p>
+                        <label for="radio">
+                            <input type="radio" name="radio">
+                            IPS Centro
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="radio">
+                            <input type="radio" name="radio">
+                            IPS Agua Blanca
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="radio">
+                            <input type="radio" name="radio">
+                            IPS Calamo
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="radio">
+                            <input type="radio" name="radio">
+                            IPS Solarte
+                        </label>
+                    </p>
+
+                    <p>
+                        <select name="seleccion" id="seleccion">
+                            <option class="opt" value="">Liliana Yisela Gomez</option>
+                            <option class="opt" value="">Andrea Martinez Rivera</option>
+                            <option class="opt" value="">Luis Eduardo Ramirez</option>
+                        </select>
+                    </p>
+
+                    
+                    <p>
+                        <button  class="animate__animated animate__shakeX" type="submit">Agendar Cita</button>
+                    </p>
+                </div>
+                
+            </form>
+
+            
+            </div>
+        </div>
+</body>
+</html>

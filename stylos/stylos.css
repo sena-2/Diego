@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #0a192f;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/*#e51a4c*/
+
+.header {
+    width: 1120px;
+    height: 101vh;
+    margin: auto;
+}
+
+.nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 28px 0;
+    height: 45px;
+}
+
+.nav-menu {
+    display: flex;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 6px;
+}
+
+li a:hover {
+    border-bottom: 2px solid #ff134c;
+}
+
+.btn {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border: 2px solid #e74c3c;
+
+        cursor: pointer;
+
+        display: flex;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1;
+        margin-top: 10px;
+        padding: 0.7em 1.5em;
+        text-decoration: none;
+        text-align: center;
+}
+
+.third {
+
+        border-color: #3498db;
+        color: #fff;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;      
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #e51a4c inset, 0 0 10px 4px #e51a4c;
+}
+
+
+
+.info {
+    margin: 70px 0;
+    width: 900px;
+}
+
+.info > * {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 95px;
+    font-family: 'Times New Roman', Times, serifs;
+}
+
+
+
+h2 {
+    font-size: 66px;
+    color: #ffffff8d;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2:hover {
+    color: #fff;
+    transition: 1.5s;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 span {
+    padding-left: 10px;
+    color: #ff134c;
+}
+
+p {
+    width: 550px;
+    font-size: 15px;
+    color: #ffffff69;
+}
+
+p span {
+    color: #e51a4c;
+    font-weight: bold;
+}
+
+.btn-2 {
+    margin: 20px 30px;
+    width: 20%;
+    color: #fff;
+    background: none;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e51a4c ;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: #e51a4c;
+    transition: 1.7s;
+}
+
+.icons i {
+    margin-top: 7px;
+    font-size: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+
+
+
+/*---------------------------------------------------*/
+
+.mis-trabajos {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 28px;
+    display: none;
+   
+}
+
+
+
+.gallery-img {
+    text-align: center;
+    width: 75%;
+    height: 490px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0px auto;
+}
+
+.gallery-img a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallery-img a h3 {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    border-bottom: 2px solid #ff134c;
+    padding-bottom: 5px;
+}
+
+
+.gallery-img .img  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/tipografias.webp');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img:hover::after {
+    transform: translate(0);
+}
+
+
+
+.gallery-img .img::after {
+    content: "Tipografias";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.gallery-img .imgdos  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/margins.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .imgdos:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .imgdos::after {
+    content: "Margin and Padding";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+
+.gallery-img .img3  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/flexbox.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img3:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .img3::after {
+    content: "Contenedores";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.gallery-img .img4  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/tienda.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img4:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .img4::after {
+    content: "Tienda de MMA";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.gallery-img .img5  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/ssss.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img5:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .img5::after {
+    content: "Box Shadow";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.gallery-img .img6  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/tablas.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img6:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .img6::after {
+    content: "Tablas";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+.gallery-img .img7  {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../img/formulario.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img .img7:hover::after {
+    transform: translate(0);
+}
+
+.gallery-img .img7::after {
+    content: "Formulario";
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2fcf2;
+    background-color: #3669a767;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+}
+
+
+.title-portafolio {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.title-portafolio span {
+    color: #e51a4c;
+}
+
+
+
+
+
+@media(max-width: 900px){
+
+    .header {
+        max-width: 500px;
+    }
+    .nav {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .nav-menu {
+        margin: auto;
+        width: 438px;
+        display: block;
+        padding: 0 5px;
+        background-color: #e51a4c;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    li a:hover {
+        border-bottom: 2px solid #3498db;
+    }
+
+    a {
+        padding: 2px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 35px;
+        padding: auto;
+    }
+
+    .nav-menu li {
+        padding-top: 10px;
+    }
+
+    h1, h2 , h3 {
+        font-size: 20px;
+    }
+
+    p {
+        width: 390px;
+    }
+
+    .info {
+        max-width: 400px;
+        margin-top: 425px;
+        display: block;
+    }
+
+    .gallery-img {
+        width: 95%;
+        height: 490px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 0px auto;
+    }
+
+    .mis-trabajos {
+        margin-top: 180px;
+    }
+}

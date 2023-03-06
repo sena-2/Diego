@@ -1,0 +1,197 @@
+body{
+    background-color: #F2F2F2;
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    background-size: 20px;
+    color: red;
+    font-family: ufc;
+}
+
+@font-face{
+    font-family: ufc;
+    src: url("../../fuentes/ufc.otf");
+}
+
+/*contendores*/
+
+.divison-2{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 190px;  
+}
+
+.container-1{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: red;
+
+}
+
+
+
+
+
+.container-2{
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: red;
+    
+}
+
+.container-2 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
+
+
+.container-3{
+    width: 300px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: red;
+}
+
+.container-3 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
+
+
+
+
+
+/*contendor 2*/
+
+.divison-3{
+    margin-top: 12px;
+    display: flex;
+    margin-left: 190px;  
+}
+
+.container-4{
+    width: 300px;
+    height: 180px;
+    background-color: blue;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.container-5{
+    width: 300px;
+    height: 180px;
+    background-color: blue;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container-5 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
+
+
+.container-6{
+    width: 300px;
+    height: 180px;
+    background-color: blue;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container-6 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
+
+
+/*contendor 4*/
+
+.divison-4{
+    margin-top: 12px;
+    display: flex;
+    margin-left: 190px;  
+}
+
+.container-7{
+    width: 300px;
+    height: 180px;
+    background-color: red;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.container-8{
+    width: 300px;
+    height: 180px;
+    background-color: red;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.container-8 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
+
+.container-9{
+    width: 300px;
+    height: 180px;
+    background-color: red;
+    background-size: cover;
+    margin-left: 12px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container-9 img{
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    opacity: 30%;
+}
+
