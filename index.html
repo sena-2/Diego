@@ -4,98 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Miller Rivera</title>
+    <title>Portafolio - Diseño Gráfico</title>
     <link rel="stylesheet" href="stylos/stylos.css">
-    <link rel="icon" href="img/hasby.png">
-    <script src="script/app.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://kit.fontawesome.com/4a8e26ddd0.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://kit.fontawesome.com/4a8e26ddd0.css" crossorigin="anonymous">
 </head>
 <body>
-    
     <header class="header">
-         <div class="nav">
-            <img class="logo" src="img/logomiller.png" alt="">
-
+        <div class="nav">
+            <h3>Diego Madeo</h3>
             <ul class="nav-menu">
-                <li><a href="">Menu</a></li>
-                <li><a href="#mis-trabajos" onclick="mostrar()">Mis Trabajos</a></li>
-                <li><a href="">Experiencia</a></li>
-                <li><a href="">Sobre Mi</a></li>
-                <li><a href="">Contacto</a></li>
-                <button class="btn third">Perfil</button>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-         </div>
+        </div>
 
-         <div class="info animate__animated animate__fadeInDown">
-            <h3 class="">Hola, <span>Mi Nombre Es</span></h3>
-            <h1>Miller Rivera</h1>
-            <h2>Desarrollador de software.</h2>
-            <P>Desarrollador de software con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. Dominio de varias plataformas, lenguajes <span>y sistemas integrados. Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas.</span></P>
-
-            <div class="icons">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
+        <div id="home" class="interfaz">
+            <div class="info">
+                <h1>Diseñador Gráfico</h1>
+                <h2>Especialista en Diseño Visual</h2>
+                <p>Diseñador gráfico con experiencia en creación de conceptos visuales, diseño de interfaces y material publicitario. Experto en herramientas de diseño y con un enfoque en soluciones creativas y efectivas.</p>
+                <button class="btn-2">VER TRABAJO</button>
             </div>
-
-            <button class="btn-2">MILLER</button>
-         </div>
-
-    </header>
-
-
-    <section id="mis-trabajos" class="mis-trabajos">
-        <h2 class="title-portafolio">Mi <span>Portafolio</span></h2>
-        <div class="gallery-img">
-            <div>
-                <a href="subpages/fuentes_margin_padding/fuentes.html"><div class="img"></div></a>
-                <a href="subpages/fuentes_margin_padding/fuentes.html"><h3>Fuentes</h3></a>
-            </div>
-
-            <div>
-                <a href="subpages/fuentes_margin_padding/margin-padding.html"><div class="imgdos"></div></a>
-                <a href="subpages/fuentes_margin_padding/margin-padding.html"><h3>Margin & Padding</h3></a>
-            </div>
-
-            <div>
-                <a href="subpages/fuentes_margin_padding/contenedor.html"><div class="img3"></div></a>
-                <a href="subpages/fuentes_margin_padding/contenedor.html"><h3>Contenedores</h3></a>
-            </div>
-
-            <div>
-                <a href=""><div class="img4"></div></a>
-                <a href=""><h3>Tienda MMA</h3></a>
-            </div>
-
-            <div>
-                <a href="subpages/boxshadow/index.html"><div class="img5"></div></a>
-                <a href="subpages/boxshadow/index.html"><h3>Box Shadow</h3></a>
-            </div>
-
-
-            <div>
-                <a href="subpages/tabla/tabla.html"><div class="img6"></div></a>
-                <a href="subpages/tabla/tabla.html"><h3>Tablas</h3></a>
-            </div>
-
-            <div>
-                <a href="subpages/form/index.html"><div class="img7"></div></a>
-                <a href="subpages/form/index.html"><h3>Formulario</h3></a>
-            </div>
-
-            <div>
-                <a href=""><div class="img8"></div></a>
-                <a href=""><h3>Proximo Trabajo</h3></a>
+            <div class="diego-img">
+                <!-- Imagen o contenido aquí -->
             </div>
         </div>
-    </section>
-    
+
+        <h2 id="gallery" class="gallery-title">Galería de Videos e Imágenes</h2>
+
+        <div class="gallery">
+            <div class="gallery-item" id="item1">
+                <video controls>
+                    <source src="img/PERSONAJE animado.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button onclick="like('item1')">Like</button>
+                    <button onclick="dislike('item1')">Dislike</button>
+                </div>
+                <div class="like-dislike-count" id="count-item1">
+                    Likes: 0 | Dislikes: 0
+                </div>
+            </div>
+
+            <div class="gallery-item" id="item2">
+                <video controls>
+                    <source src="img/flash.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button onclick="like('item2')">Like</button>
+                    <button onclick="dislike('item2')">Dislike</button>
+                </div>
+                <div class="like-dislike-count" id="count-item2">
+                    Likes: 0 | Dislikes: 0
+                </div>
+            </div>
+
+            <div class="gallery-item" id="item3">
+                <img src="img/Imagen de WhatsApp 2024-08-16 a las 20.18.11_de82e96d.jpg" alt="Image 1">
+                <div class="controls">
+                    <button onclick="like('item3')">Like</button>
+                    <button onclick="dislike('item3')">Dislike</button>
+                </div>
+                <div class="like-dislike-count" id="count-item3">
+                    Likes: 0 | Dislikes: 0
+                </div>
+            </div>
+
+            <div class="gallery-item" id="item4">
+                <img src="img/POSTER Amadeo DELUXE EDITION (1).png" alt="Image 2">
+                <div class="controls">
+                    <button onclick="like('item4')">Like</button>
+                    <button onclick="dislike('item4')">Dislike</button>
+                </div>
+                <div class="like-dislike-count" id="count-item4">
+                    Likes: 0 | Dislikes: 0
+                </div>
+            </div>
+        </div>
+
+        <div id="services" class="services">
+            <div class="service-card">
+                <!-- <i class="fas fa-pencil-ruler"></i> -->
+                <h3>Diseño de Logotipos</h3>
+                <p>Creación de logotipos únicos y memorables</p>
+            </div>
+            <div class="service-card">
+                <!-- <i class="fas fa-desktop"></i> -->
+                <h3>Diseño Web</h3>
+                <p>Desarrollo de sitios web visualmente atractivos y funcionales</p>
+            </div>
+            <div class="service-card">
+                <!-- <i class="fas fa-print"></i> -->
+                <h3>Diseño para Impresión</h3>
+                <p>Diseño de material publicitario como folletos, tarjetas de presentación.</p>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-form">
+            <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">Contáctame en WhatsApp</a>
+
+        </div>
+
+
+        
+    </header>
 </body>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    loadCounts();
+});
+
+function like(itemId) {
+    const likeKey = `${itemId}-likes`;
+    const dislikeKey = `${itemId}-dislikes`;
+
+    let likes = parseInt(localStorage.getItem(likeKey)) || 0;
+    let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
+
+    localStorage.setItem(likeKey, ++likes);
+    updateCount(itemId, likes, dislikes);
+}
+
+function dislike(itemId) {
+    const likeKey = `${itemId}-likes`;
+    const dislikeKey = `${itemId}-dislikes`;
+
+    let likes = parseInt(localStorage.getItem(likeKey)) || 0;
+    let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
+
+    localStorage.setItem(dislikeKey, ++dislikes);
+    updateCount(itemId, likes, dislikes);
+}
+
+function updateCount(itemId, likes, dislikes) {
+    document.getElementById(`count-${itemId}`).innerText = `Likes: ${likes} | Dislikes: ${dislikes}`;
+}
+
+function loadCounts() {
+    const items = ['item1', 'item2', 'item3', 'item4'];
+    items.forEach(itemId => {
+        const likes = parseInt(localStorage.getItem(`${itemId}-likes`)) || 0;
+        const dislikes = parseInt(localStorage.getItem(`${itemId}-dislikes`)) || 0;
+        updateCount(itemId, likes, dislikes);
+    });
+}
+</script>
 </html>
