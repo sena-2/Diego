@@ -87,6 +87,8 @@ li {
     padding: 20px;
     text-align: center;
     display: flex;
+
+
 }
 
 .service-card h3 {
@@ -98,7 +100,7 @@ li {
 .service-card p {
     
     font-size: 16px;
-    color: #555;
+    color: #fff;
 }
 
 .service-card i {
@@ -156,7 +158,7 @@ h3 span {
 p {
     width: 550px;
     font-size: 15px;
-    color: #ffffff69;
+    color: #fff;
 }
 
 p span {
@@ -164,13 +166,16 @@ p span {
     font-weight: bold;
 }
 
+.des {
+    padding-bottom: 40px;
+}
+
 .btn-2 {
-    margin: 20px 0;
+   padding: 10px;
     width: 200px;
     color: #fff;
     background: none;
     border: 1px solid #e51a4c;
-    padding: 10px;
     cursor: pointer;
     text-align: center;
     transition: background-color 1.7s, border-color 1.7s;
@@ -394,31 +399,14 @@ h3 span {
     color: #ff134c;
 }
 
-p {
-    font-size: 1em;
-    color: #ffffff69;
-}
+
 
 p span {
     color: #e51a4c;
     font-weight: bold;
 }
 
-.btn-2 {
-    margin: 20px 0;
-    color: #fff;
-    background: none;
-    border: 1px solid #e51a4c;
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 1.7s, border-color 1.7s;
-}
 
-.btn-2:hover {
-    background-color: #e51a4c;
-    border-color: #e51a4c;
-}
 
 .diego-img {
     flex: 1;
@@ -470,6 +458,15 @@ p span {
 .like-dislike-count {
     text-align: center;
     margin-top: 10px;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+}
+.img-fondo {
+    width: 70%;
+    margin: auto;
 }
 
 /* Estilos para el título de la galería */
@@ -588,6 +585,10 @@ p span {
         font-size: 14px;
     }
 
+    .btn-2 {
+margin-left: 125px;
+     }
+
 .des {
     display: flex;
     flex-wrap: wrap;
@@ -622,5 +623,35 @@ p span {
 
     .diego-img {
         display: none;
+    }
+
+    .service-card {
+    width: 350px;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .service-card p {
+   width: 200px;
+        color: #fff;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .des {
+        text-align: center;
+    }
+    .btn-2 {
+        width: 100px;
+    }
+    .img-fondo {
+        width: 100%;
     }
 }
