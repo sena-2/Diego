@@ -82,8 +82,7 @@ li {
 .sidebar ul li {
     padding: 15px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s, padding-left 0.3s;
-    transition: all;
+
 }
 
 .sidebar ul li a {
@@ -95,7 +94,6 @@ li {
 }
 
 .sidebar ul li a:hover {
-    background-color: #1e2a48;
     padding-left: 30px;
 }
 
@@ -106,7 +104,6 @@ li {
 
 .sidebar ul li:hover {
     cursor: pointer;
-    background-color: #1e2a48;
 }
 
 .overlay {
