@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Portafolio - Diseño Gráfico</title>
     <link rel="stylesheet" href="stylos/stylos.css">
 </head>
+
 <body>
     <header class="header">
         <div class="nav">
@@ -19,11 +21,30 @@
             </ul>
         </div>
 
+        <div class="header2">
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="overlay" id="overlay"></div>
+        </div>
+
         <div id="home" class="interfaz">
             <div class="info">
                 <h1>Diseñador Gráfico</h1>
                 <h2>Especialista en Diseño Visual</h2>
-                <p class="des">Diseñador gráfico con experiencia en creación de conceptos visuales, diseño de interfaces y material publicitario. Experto en herramientas de diseño y con un enfoque en soluciones creativas y efectivas.</p>
+                <p class="des">Diseñador gráfico con experiencia en creación de conceptos visuales, diseño de interfaces
+                    y material publicitario. Experto en herramientas de diseño y con un enfoque en soluciones creativas
+                    y efectivas.</p>
                 <a href="#portafolio" class="btn-2">VER TRABAJO</a>
             </div>
             <div class="diego-img">
@@ -31,9 +52,9 @@
             </div>
         </div>
         <h2 id="portafolio" class="gallery-title">Portafolio</h2>
-<div class="img-content">
-    <img class="img-fondo" src="img/fondo.jpg" alt="">
-</div>
+        <div class="img-content">
+            <img class="img-fondo" src="img/fondo.jpg" alt="">
+        </div>
 
         <h2 id="gallery" class="gallery-title">Galería de Videos e Imágenes</h2>
 
@@ -88,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <h2  class="gallery-title">Servicios</h2>
+        <h2 class="gallery-title">Servicios</h2>
 
         <div id="services" class="services">
             <div class="service-card">
@@ -114,48 +135,68 @@
         </div>
 
 
-        
+
     </header>
 </body>
 
 <script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    loadCounts();
+    document.addEventListener('DOMContentLoaded', (event) => {
+        loadCounts();
+    });
+
+    function like(itemId) {
+        const likeKey = `${itemId}-likes`;
+        const dislikeKey = `${itemId}-dislikes`;
+
+        let likes = parseInt(localStorage.getItem(likeKey)) || 0;
+        let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
+
+        localStorage.setItem(likeKey, ++likes);
+        updateCount(itemId, likes, dislikes);
+    }
+
+    function dislike(itemId) {
+        const likeKey = `${itemId}-likes`;
+        const dislikeKey = `${itemId}-dislikes`;
+
+        let likes = parseInt(localStorage.getItem(likeKey)) || 0;
+        let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
+
+        localStorage.setItem(dislikeKey, ++dislikes);
+        updateCount(itemId, likes, dislikes);
+    }
+
+    function updateCount(itemId, likes, dislikes) {
+        document.getElementById(`count-${itemId}`).innerText = `Likes: ${likes} | Dislikes: ${dislikes}`;
+    }
+
+    function loadCounts() {
+        const items = ['item1', 'item2', 'item3', 'item4'];
+        items.forEach(itemId => {
+            const likes = parseInt(localStorage.getItem(`${itemId}-likes`)) || 0;
+            const dislikes = parseInt(localStorage.getItem(`${itemId}-dislikes`)) || 0;
+            updateCount(itemId, likes, dislikes);
+        });
+    }
+
+
+    const botonMenu = document.getElementById('menu-toggle');
+const barraLateral = document.getElementById('sidebar');
+const superposicion = document.getElementById('overlay');
+
+botonMenu.addEventListener('click', () => {
+    const estaAbierto = barraLateral.style.left === '0px';
+    barraLateral.style.left = estaAbierto ? '-250px' : '0px';
+    superposicion.style.display = estaAbierto ? 'none' : 'block';
 });
 
-function like(itemId) {
-    const likeKey = `${itemId}-likes`;
-    const dislikeKey = `${itemId}-dislikes`;
+superposicion.addEventListener('click', () => {
+    barraLateral.style.left = '-250px';
+    superposicion.style.display = 'none';
+});
 
-    let likes = parseInt(localStorage.getItem(likeKey)) || 0;
-    let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
 
-    localStorage.setItem(likeKey, ++likes);
-    updateCount(itemId, likes, dislikes);
-}
-
-function dislike(itemId) {
-    const likeKey = `${itemId}-likes`;
-    const dislikeKey = `${itemId}-dislikes`;
-
-    let likes = parseInt(localStorage.getItem(likeKey)) || 0;
-    let dislikes = parseInt(localStorage.getItem(dislikeKey)) || 0;
-
-    localStorage.setItem(dislikeKey, ++dislikes);
-    updateCount(itemId, likes, dislikes);
-}
-
-function updateCount(itemId, likes, dislikes) {
-    document.getElementById(`count-${itemId}`).innerText = `Likes: ${likes} | Dislikes: ${dislikes}`;
-}
-
-function loadCounts() {
-    const items = ['item1', 'item2', 'item3', 'item4'];
-    items.forEach(itemId => {
-        const likes = parseInt(localStorage.getItem(`${itemId}-likes`)) || 0;
-        const dislikes = parseInt(localStorage.getItem(`${itemId}-dislikes`)) || 0;
-        updateCount(itemId, likes, dislikes);
-    });
-}
+    
 </script>
+
 </html>
